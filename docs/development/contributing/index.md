@@ -152,7 +152,16 @@ The user guide is maintained in the `docs/user-guide` folder. Before creating a 
 
 The user guide is built using [MkDocs](https://www.mkdocs.org/). You install the dependencies for building the user guide by running `make build` in the root of the repo.
 
-Activate the virtual environment and run `mkdocs serve` to build and serve the user guide, so you can view it locally and see updates as you make changes.
+Activate the virtual environment by running:
+
+```bash
+source .venv/bin/activate
+```
+
+Then run `mkdocs serve` to build and serve the user guide, so you can view it locally and see updates as you make changes. The terminal output of `mkdocs serve` will tell you where to point your browser to, for example "Serving on http://127.0.0.1:8000/"
+
+
+Note: If `mkdocs serve` throws an error like "Aborted with 13 warnings in strict mode!", ensure you have compatible versions, particularly Python which may need to be the latest version. You can also try running `make requirements`.
 
 #### Creating a new user guide page
 
